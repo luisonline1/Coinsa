@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinsa", "Coinsa\Coinsa.csproj", "{B033F491-E2DE-4BB4-9EF7-2C3E7BC5A1CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B033F491-E2DE-4BB4-9EF7-2C3E7BC5A1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B033F491-E2DE-4BB4-9EF7-2C3E7BC5A1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B033F491-E2DE-4BB4-9EF7-2C3E7BC5A1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B033F491-E2DE-4BB4-9EF7-2C3E7BC5A1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {536539CD-F81A-4992-8FAA-F47D709797D0}
+	EndGlobalSection
+EndGlobal
