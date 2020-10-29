@@ -38,10 +38,11 @@ CREATE TABLE Usuarios.TblUsuarios
 	,SegNombre			varchar(15)
 	,ApePaterno			varchar(15)
 	,ApeMaterno			varchar(15)
-	,Usuario			varchar(7) unique
+	,Usuario			varchar(20) unique
 	,Contraseña			varbinary(8000) 
 	,SucursalId			int
 	,CorreoElectronico	varchar(50)
+	,Token				varchar(100)
 	,FecAlta			datetime default getdate()
 	,PerfilUsuarioId	Int
 	,Intento			int default 0

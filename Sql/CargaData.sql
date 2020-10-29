@@ -17,8 +17,8 @@ exec Usuarios.SpCreaPerfilUsuario @Perfil='Promotor'
 --select * from Catalagos.TblSucursales
 exec Catalagos.SpCreaSucursal
 @NumSucursal		='001'
-,@NombreSucursal	='Matriz'
-,@DireccionSucursal	='Cumbre, Monterrey N.L.'
+,@NombreSucursal	='Matríz'
+,@DireccionSucursal	='Cumbres, Monterrey N.L.'
 
 --==========================================
 --CARGA USUARIOS 
@@ -29,7 +29,7 @@ exec Usuarios.SpCreaUsuario
 ,@SegundoNombre	='Luis'
 ,@ApPaterno		='Rivera'
 ,@ApMaterno		='Cerezo'
-,@Us			='lriver'
+,@Us			='joseluis.rivera'
 ,@Psw			='lriver'
 ,@Perfil		=1
 ,@CorreoElectronico='joseluis.rivera@fcoinsa.com.mx'	

@@ -45,8 +45,8 @@ create Proc Usuarios.SpCreaUsuario
 ,@SegundoNombre		varchar(15)
 ,@ApPaterno			varchar(15)
 ,@ApMaterno			varchar(15)
-,@Us				varchar(7)
-,@Psw				varchar(8)
+,@Us				varchar(50)
+,@Psw				varchar(20)
 ,@Perfil			Int
 ,@CorreoElectronico	varchar(50)
 ,@SucursalId		int
@@ -56,5 +56,5 @@ as
 		insert into Usuarios.TblUsuarios
 			(PriNombre,		SegNombre,		ApePaterno,		ApeMaterno,		Usuario,	Contraseña,								PerfilUsuarioId,	Bloqueado,	Activo, CorreoElectronico	,SucursalId)
 		values
-			(@PrimerNombre,	@Segundonombre,	@ApPaterno,		@ApMaterno,		@Us,		ENCRYPTBYPASSPHRASE('C01n54', @Psw),	@Perfil,			0,			1,		@CorreoElectronico	,@SucursalId)
+			(@PrimerNombre,	@Segundonombre,	@ApPaterno,		@ApMaterno,		@Us,		ENCRYPTBYPASSPHRASE('COINSA SERV', @Psw),	@Perfil,			0,			1,		@CorreoElectronico	,@SucursalId)
 GO
