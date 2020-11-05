@@ -53,6 +53,32 @@ CREATE TABLE Usuarios.TblUsuarios
 )
 Go
 
+--USUARIOS2 ESTA TABLA NO TIENE EL PSSW ENCRITPADO
+if object_id('Usuarios.TblUsuarios2') is not null
+	drop table Usuarios.TblUsuarios2
+go
+CREATE TABLE Usuarios.TblUsuarios2
+(
+	IdUsuario			int identity(1,1)
+	,PriNombre			varchar(15)
+	,SegNombre			varchar(15)
+	,ApePaterno			varchar(15)
+	,ApeMaterno			varchar(15)
+	,Usuario			varchar(20) unique
+	,Contraseña			varchar(20) 
+	,SucursalId			int
+	,CorreoElectronico	varchar(50)
+	,Token				varchar(100)
+	,FecAlta			datetime default getdate()
+	,PerfilUsuarioId	Int
+	,Intento			int default 0
+	,FecUltimoIntento	datetime
+	,Bloqueado			bit
+	,Activo				bit
+	Primary key			(IdUsuario)
+)
+Go
+
 --PERFILES DE USUARIOS
 if object_id('Usuarios.TblPerfiles') is not null
 	drop table Usuarios.TblPerfiles
